@@ -1,62 +1,68 @@
-.product{
-    width: 100%;
-    min-width: 400px;
-    max-width: 700px;
-    background-color:#eee;
-    margin: auto;
-    color:#666;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+*{
+    box-sizing: border-box;
 }
-.product a{
-    color:inherit;
-}
-.flex-parent{
+.container-feedbacks{
     display: flex;
-    justify-content:space-between;
-    align-items:center;
-    /* padding: 0 20px; */
-    border-bottom: 2px solid #ccc;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
 }
-.border-none{
-    border-bottom: none;
+.feedback{
+    flex-basis: 250px;
+    margin: 7px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 1px rgba(224,224,224,1);
+    display: flex;
+    flex-direction: column;
+    
 }
-.back{
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
+.quote{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-image: url(./assets/icons/format-quote-open.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.product-image{
-    width: 40%;
-}
-.product-info{
-    flex: 0 1 60%;
-    border-left: 2px solid #ccc;
-    padding: 20px;
-}
-.product-info>h2,
-.product-info>h3{
+ .quote.green{
+    background-color:green;
+    
+ }
+ .quote.pink{
+    background-color:pink;
+    
+ }
+ .feedback-text{
+    flex-grow: 1;
+ }
+ .feedback-author, 
+ .feedback-author-prof{
+    font-size: 0.85em;
+    text-align: right;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .feedback-author{
+    margin-bottom: 0;
+ }
+ .feedback-author-prof{
     margin: 0;
-    text-transform: uppercase;
-}
-.product-info>h3{
-    font-weight: 100;
-    font-size: 0.8em;
-}
-.product-price{
-    font-weight: 100;
-    font-size: 2.5em;
-    margin: 0.5em 0;
-}
-p{
-    line-height: 1.8;
-}
-.group-btn>button{
-    width: 45%;
-    border: 1px solid #666;
-    text-transform: uppercase;
-    padding: 0.6em;
-    font-size: 1.2em;
-color:inherit;
-margin-right: 10px;
+    text-transform: capitalize;
+ }
+ .feedback-author-company{
+    margin-bottom: 0;
+font-weight: bolder;
+text-align: right;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-}
+ }
+ .feedback-author.green{
+    color: green;
+ }
+ .feedback-author.pink{
+     color:pink; 
+     
+ }
+ 
